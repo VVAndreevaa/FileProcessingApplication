@@ -23,7 +23,7 @@ public class GUI {
     private TextContainer textContainer;
     private FunctionJPanel functionJPanel;
 
-    public static boolean isAddFunctionalityPanels = false;
+    private static boolean isAddFunctionalityPanels = false;
 
     public void setEditor(final TextEditor editor) {
         this.editor = editor;
