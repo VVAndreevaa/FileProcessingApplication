@@ -6,8 +6,8 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class FileOperations {
-    public ArrayList<String> data;
-    public int lines;
+    private ArrayList<String> data;
+    private int lines;
     private File txtFile;
 
     public FileOperations(File txtFile) {
