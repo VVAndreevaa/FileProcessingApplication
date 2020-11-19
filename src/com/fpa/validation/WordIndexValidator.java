@@ -37,6 +37,13 @@ public class WordIndexValidator extends IndexValidator implements Validatable {
 
         String line1Words = data.get(lineIndex1);
         String line2Words = data.get(lineIndex2);
+        
+        if (line1Words.isEmpty()){
+            throw new InvalidWordIndexException("Line " + ++lineIndex1 + " is empty!");
+        }
+        if (line2Words.isEmpty()){
+            throw new InvalidWordIndexException("Line " + ++lineIndex2 + " is empty!");
+        }
 
         String[] words1 = splitWords(line1Words);
         String[] words2 = splitWords(line2Words);
