@@ -14,10 +14,6 @@ public class FileOperations {
         this.txtFile = txtFile;
     }
 
-    public int getLines(){
-        return this.lines;
-    }
-
     public ArrayList<String> getData(){
         return this.data;
     }
@@ -39,7 +35,7 @@ public class FileOperations {
         return data;
     }
 
-    public void saveFile(String[] data) throws IOException, InvalidSaveCommandException {
+    public void saveFile(String[] data) throws IOException {
         FileWriter writer = new FileWriter(txtFile);
         try(BufferedWriter bufferedWriter = new BufferedWriter(writer)) {
 
