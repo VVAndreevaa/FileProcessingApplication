@@ -6,7 +6,7 @@ import java.awt.*;
 public class TextContainer extends Container {
 
     private JTextArea textArea;
-    NumberedLinesJTextArea numberedLinesJTextArea;
+    private NumberedLinesJTextArea numberedLinesJTextArea;
     private String data;
 
     public void setTextArea(JTextArea textArea) {
@@ -14,10 +14,6 @@ public class TextContainer extends Container {
     }
     public void setData(String data) {
         this.data = data;
-    }
-
-    public TextContainer(){
-
     }
 
     public void createTextContainer(){
